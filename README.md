@@ -1,28 +1,32 @@
 # [Vận dụng cơ bản] CHUẨN HÓA NHỊP SPRINT CỦA ĐỘI RIKKEIGO
 
-> 👤 **Học viên:** Đỗ Hoàng Sơn | **Mã SV:** PTIT-HCM-055
+> 👤 **Học viên:** Đỗ Hoàng Sơn | **Mã SV:** PTIT-HCM-066
 > 🏫 **Môn học:** IT206-K25-Agile-va-Scrum
 
 ---
 
-## Phần 1 - Phân tích
+## Nhiệm vụ 1: Phân tích các quy tắc vận hành Sprint của đội RikkeiGo
 
-Dưới đây là bảng rà soát 4 quy tắc mà đội RikkeiGo đang áp dụng qua lăng kính Scrum chuẩn và 3 trụ cột Minh bạch - Thanh tra - Thích nghi:
+Sau khi rà soát cách làm việc thực tế của đội RikkeiGo qua 3 Sprint vừa qua, tôi đã đối chiếu từng quy tắc với cẩm nang Scrum Guide và ghi nhận lại các điểm bất hợp lý trong bảng phân tích dưới đây.
 
-| Quy tắc | Đúng/Sai | Vi phạm sự kiện/Artifact nào | Trụ cột bị ảnh hưởng | Hậu quả thực tế / Lý do đúng |
+- Đội đang gặp vấn đề nghiêm trọng về tính minh bạch khi độ dài Sprint trôi nổi không cố định.
+- Việc demo code chưa test làm sai lệch hoàn toàn khái niệm Increment chuẩn Scrum.
+- Bỏ qua Retrospective khiến đội mất đi cơ hội cải tiến quy trình, dẫn đến lỗi lặp đi lặp lại.
+
+| Quy tắc | Đúng/Sai | Vi phạm sự kiện/Artifact nào | Trụ cột bị ảnh hưởng | Hậu quả thực tế |
 | --- | --- | --- | --- | --- |
-| QT1. Độ dài Sprint linh hoạt: tuần nhiều việc thì kéo dài 3-4 tuần, ít việc thì rút còn 1 tuần. | Sai | Sprint (Khung thời gian cố định - Timebox) | Minh bạch | Phá vỡ nhịp đập đều đặn của dự án, làm người dùng và các bên liên quan không thể biết chính xác khi nào có bản cập nhật phần mềm mới. |
-| QT2. Cuối Sprint, đội trình diễn cho người dùng thử mọi thứ đã code, kể cả phần chưa kiểm thử, để họ thấy đội làm việc chăm chỉ. | Sai | Sprint Review / Increment | Thanh tra | Vi phạm định nghĩa hoàn thành. Trưng bày code chưa kiểm thử dẫn đến việc tính năng vẫn còn lỗi, làm người dùng mất lòng tin. |
-| QT3. Sau buổi Sprint Review, Đức cập nhật lại Product Backlog dựa trên góp ý của người dùng thử. | Đúng | — | — | Product Owner có toàn quyền quản lý Product Backlog và việc cập nhật backlog dựa trên phản hồi thực tế từ Sprint Review là cốt lõi của tính thích nghi trong Scrum. |
-| QT4. Sprint vừa rồi không có sự cố nào nên đội bỏ buổi Sprint Retrospective cho đỡ tốn thời gian. | Sai | Sprint Retrospective | Thích nghi | Bỏ lỡ cơ hội cải tiến quy trình. Ngay cả khi không có sự cố lớn, đội vẫn cần họp để tối ưu hóa cách làm việc, nếu không các lỗi nhỏ sẽ tích tụ và lặp lại ở các Sprint sau. |
+| QT1. Độ dài Sprint linh hoạt: tuần nhiều việc thì kéo dài 3–4 tuần, ít việc thì rút còn 1 tuần. | Sai | Sprint (Timebox) | Minh bạch (Transparency) | Khách hàng và các bên liên quan không thể dự đoán được thời điểm phát hành phiên bản mới, làm mất nhịp độ ổn định của dự án. |
+| QT2. Cuối Sprint, đội trình diễn cho người dùng thử mọi thứ đã code, kể cả phần chưa kiểm thử, để họ thấy đội làm việc chăm chỉ. | Sai | Sprint Review & Increment | Minh bạch (Transparency) | Tạo cảm giác giả tạo về tiến độ, đưa sản phẩm lỗi đến tay người dùng thử khiến họ hoài nghi về chất lượng. |
+| QT3. Sau buổi Sprint Review, Đức cập nhật lại Product Backlog dựa trên góp ý của người dùng thử. | Đúng | — | — | Product Owner là người chịu trách nhiệm tối cao về Product Backlog. Việc lắng nghe phản hồi từ Sprint Review để cập nhật Backlog là hành động hoàn toàn chuẩn xác. |
+| QT4. Sprint vừa rồi không có sự cố nào nên đội bỏ buổi Sprint Retrospective cho đỡ tốn thời gian. | Sai | Sprint Retrospective | Thích nghi (Adaptation) | Triệt tiêu cơ hội tự nhìn nhận lại nội bộ, khiến đội bỏ sót các cải tiến nhỏ và lặp lại các vấn đề tiềm ẩn trong các Sprint sau. |
 
-## Phần 2 - Sửa lỗi
+## Nhiệm vụ 2: Viết lại các quy tắc sai thành chuẩn Scrum
 
-Để giúp đội RikkeiGo vận hành đúng chuẩn Scrum ngay từ Sprint kế tiếp, tôi đã viết lại các quy tắc sai thành các quy tắc đúng đắn, cụ thể như sau:
+Dựa trên các lỗi đã chỉ ra ở phần phân tích, tôi đã biên soạn lại bộ quy tắc mới giúp Scrum Master Lan và Product Owner Đức áp dụng ngay lập tức từ Sprint tiếp theo:
 
-- Quy tắc 1 (Sửa): 'Độ dài Sprint được cố định nghiêm ngặt trong 2 tuần cho mọi chu kỳ, tạo nhịp đập ổn định giúp người dùng và đội ngũ luôn biết chính xác thời điểm bàn giao sản phẩm mới.'
-- Quy tắc 2 (Sửa): 'Trong buổi Sprint Review, đội chỉ trình diễn những hạng mục công việc đã đạt chuẩn hoàn thành (Definition of Done), nghĩa là đã được kiểm thử ổn định và sẵn sàng bàn giao.'
-- Quy tắc 4 (Sửa': 'Buổi Sprint Retrospective là sự kiện bắt buộc cuối mỗi Sprint để toàn đội nhìn lại quy trình, cải tiến cách làm việc dù Sprint vừa rồi không xảy ra sự cố lớn nào.'
+- Quy tắc 1 (Sửa lại): Độ dài Sprint phải được cố định nghiêm ngặt trong suốt dự án (ví dụ: đúng 2 tuần cho mọi Sprint), tạo nhịp độ nhịp nhàng và giúp các bên liên quan luôn biết chính xác thời điểm bản cập nhật ra mắt.
+- Quy tắc 2 (Sửa lại): Chỉ mang đến buổi Sprint Review những phần tính năng đã hoàn thành đạt chuẩn Definition of Done - DoD (đã viết code, đã kiểm thử ổn định, không còn lỗi nghiêm trọng) để trình diễn và lấy góp ý thực tế.
+- Quy tắc 4 (Sửa lại): Buổi Sprint Retrospective là sự kiện bắt buộc cuối mỗi Sprint cho dù dự án diễn ra suôn sẻ, nhằm giúp cả đội liên tục thanh tra và tìm kiếm cải tiến cách vận hành.
 
 ---
 
